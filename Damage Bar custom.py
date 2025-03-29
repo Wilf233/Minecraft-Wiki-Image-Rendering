@@ -2,7 +2,7 @@ import os
 from PIL import Image, ImageDraw
 import math
 
-# 此程序用于批量在Invicon上添加一半耐久的耐久条
+# 此程序用于批量在Invicon上添加自定义耐久的耐久条
 
 max_durability = 59 # 物品的最大耐久度
 durability = 56 # 物品的剩余耐久度
