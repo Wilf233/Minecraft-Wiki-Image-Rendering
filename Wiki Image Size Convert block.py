@@ -4,14 +4,17 @@ from PIL import Image
 # 此程序用于将游戏中的方块图像转换成中文Minecraft Wiki上要求的大小和文件名，其中方块Invicon可能需要另行渲染。
 
 def capitalize_words(filename, hyphen=False):
-
+    lowercase_words = {"a", "an", "the", "and", "but", "or", "nor", "for", "on", "in", "at", "to", "by", "with", "of", "as", "so", "yet"} # 省略了up
     if hyphen:
         filename = filename.replace('_', '-')
         return filename
     else:
         filename = filename.replace('_', ' ')
         name, ext = os.path.splitext(filename)
-        capitalized_name = ' '.join(word.capitalize() for word in name.split())
+        capitalized_name = ' '.join(
+            word if word in lowercase_words else word.capitalize()
+            for word in name.split()
+        )
         return capitalized_name + ext
 
 def resize_images(input_folder, output_folder, prefix='', suffix='', size=160, hyphen=False):
