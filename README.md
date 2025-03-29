@@ -16,5 +16,5 @@
 
 ## 生成方块渲染图和物品栏精灵图渲染脚本（配合等轴渲染客户端）
 1. 在input.txt中输入需要渲染的方块ID，每行一个。
-2. 运行`Generate Auto Rendering script.py`，得到output.txt。
-3. 在等轴渲染客户端中运行output.txt。
+2. 运行`Generate Auto Rendering script.py`，`得到output.txt`。
+3. 在等轴渲染客户端中运行`output.txt`。
