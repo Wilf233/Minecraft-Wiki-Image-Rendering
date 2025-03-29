@@ -1,6 +1,6 @@
-# Minecraft-Wiki-Sprites-Making
+# Minecraft-Wiki-Image-Rendering
 
-自动生成精灵图（参见[Help:精灵图](https://zh.minecraft.wiki/w/Help:精灵图)）
+自动生成精灵图和渲染图（参见[Help:精灵图](https://zh.minecraft.wiki/w/Help:精灵图)和[Help:ISO](https://zh.minecraft.wiki/w/Help:ISO)）
 
 ## 方块操作步骤
 1. 将`client.jar/assets/minecraft/textures/block`（Java版）或`/data/resource_packs/vanilla/textures/blocks`（基岩版）中的目标图像放入`/original`。
